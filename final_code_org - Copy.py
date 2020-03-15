@@ -6,7 +6,7 @@ def generate(name):
     img = Image.open(t)     #  template
     draw = ImageDraw.Draw(img)
     selectFont = ImageFont.truetype(f, size=42)   #  font selection
-    draw.text((430,360), name , font=selectFont, fill=(24, 87, 122))  
+    draw.text((455,200), name , font=selectFont, fill=(24, 87, 122))  
     img.save("final_certificates/" + name + ".png","PNG")
     print("Generated " + name)
 
