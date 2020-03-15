@@ -6,7 +6,7 @@ Created by Nishchay
 ** You can provide input names in txt file only **
 
 **For drag and drop files**
-  * Use Generator.py *
+  * Use Generator.py*
 // No need to rename files just drag and drop
 Open Generator.py using cmd or pycharm (don't just double click)
 Enter path or drag and drop Template file
@@ -15,7 +15,7 @@ Enter path or drag and drop txt file
 Hit enter and you will find generated certificates in 'final_certificates' folder
   
 **For hardcoded path and files**
-  * Use Generator_HC.py *
+  * Use Generator_HC.py*
 // You dont need to select file just place them in 'files' folder with following names
      rename Template as 'template.jpeg'
      rename Font as 'Font.otf'
