@@ -5,9 +5,10 @@ from PIL import ImageFont
 def generate(name):
     W,H=(512,220) #change width and height of center point of text accordingly
     r,g,b=(24,87,122) #change color of font
+    fsize=42
     img = Image.open("files/template.jpeg")     #  template
     draw = ImageDraw.Draw(img)
-    selectFont = ImageFont.truetype("files/Formata-Medium.otf", size=42)   #  font selection
+    selectFont = ImageFont.truetype("files/Font.otf", size=fsize)   #  font selection
     w,h = draw.textsize(name,selectFont)
     draw.text(((W-(w/2)),(H-(h/2))), name , font=selectFont, fill=(r,g,b))
     img.save("final_certificates/" + name + ".png","PNG")
