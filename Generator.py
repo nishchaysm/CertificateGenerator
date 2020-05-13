@@ -15,9 +15,19 @@ def generate(name):
     print("Generated " + name)
 
 
+bad_chars = ['"'] 
 t = input("Enter path or Drag and drop template: \n")
+for i in bad_chars : 
+    t= t.replace(i,"") 
+
 f = input("Enter path or Drag and drop font: \n")
+for i in bad_chars : 
+    f= f.replace(i,"") 
+
 o = input("Enter path or Drag and drop txt file: \n")
+for i in bad_chars : 
+    o= o.replace(i,"") 
+
 fin = open(o,"r")
 
 for i in fin:
